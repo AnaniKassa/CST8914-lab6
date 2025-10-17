@@ -51,13 +51,13 @@
 					<ul role="menubar" class="list-inline menu">
 						<li><a class="item" href="index-en.html" tabindex="0" aria-posinset="1" aria-setsize="7"
 								role="menuitem">Home</a></li>
-						<li><a class="item" href="internet-en.html" tabindex="-1" aria-posinset="2" aria-setsize="7"
+						<li><a class="item" href="internet-en.html" tabindex="0" aria-posinset="2" aria-setsize="7"
 								role="menuitem">Buying</a></li>
-						<li><a class="item" href="intranet-en.html" tabindex="-1" aria-posinset="3" aria-setsize="7"
+						<li><a class="item" href="intranet-en.html" tabindex="0" aria-posinset="3" aria-setsize="7"
 								role="menuitem">Selling</a></li>
-						<li><a class="item" href="faq-en.html" tabindex="-1" aria-posinset="6" aria-setsize="7"
+						<li><a class="item" href="faq-en.html" tabindex="0" aria-posinset="6" aria-setsize="7"
 								role="menuitem">FAQs</a></li>
-						<li><a class="item" href="contact-en.html" tabindex="-1" aria-posinset="7" aria-setsize="7"
+						<li><a class="item" href="contact-en.html" tabindex="0" aria-posinset="7" aria-setsize="7"
 								role="menuitem">Contact us</a></li>
 					</ul>
 				</div>
@@ -70,29 +70,188 @@
 
 	<main property="mainContentOfPage" class="container" role="main">
 		<h1>Welcome</h1>
-		<p>Content A here</p>
+		<section>
+			<article>
+				<h2><strong>Hi/Max Real Estate & Houses</strong></h2>
+				<p>
+				Buying or selling a home is likely the largest and most important transaction you’ll ever make. 
+				That’s why so many trust Hi/MAX Real Estate, which, according to Canadian consumers, has been 
+				voted <strong>#1 Most Trusted Real Estate Agents in Canada</strong> six times in a row.
+				</p>
+				<p>
+				<a href="#" title="Get started with Hi/Max Real Estate">Let's get started</a>
+				</p>
+			</article>
+		</section>
 		<div class="row">
 			<div class="col-md-4 pull-right">
-				<p></p>Content B here
+				<!-- <p></p>Content B here -->
+				<section aria-labelledby="related-resources">
+					<h2 id="related-resources"><strong>Related Resources</strong></h2>
+					<p>
+						It's time to sell and find the next "one". Let us help you navigate the ins & outs of your next move.
+					</p>
+					<ul>
+						<li><a href="#" title="Learn more about upgrading your home">Looking for an upgrade?</a></li>
+						<li><a href="#" title="Read useful home buying tips">Buying tips</a></li>
+						<li><a href="#" title="Estimate your home's current market value">How much is your current home worth?</a></li>
+					</ul>
+				</section>
 			</div>
 			<div class="col-md-8">
-				<p>Content C here</p>
+				<!-- <p>Content C here</p> -->
+				<section id="content-c">
+				<h2>Why choosing Hi/Max</h2>
+				<p>
+					Hi/Max agents go above and beyond and always strive to be the best they can be.
+					Hi/Max is extremely community focused, and our agents are too!
+				</p>
 
+				<h2>Stats of Hi/Max</h2>
+				<table id="himax-stats" aria-describedby="himax-stats-caption">
+					<caption id="himax-stats-caption">Real Estate Sales Statistics (2021–2022)</caption>
+					<thead>
+					<tr>
+						<th rowspan="2" id="year" class="main-header">Year</th>
+						<th colspan="2" id="sold-properties" class="main-header">Sold Properties</th>
+						<th colspan="2" id="avg-selling-price" class="main-header">Average Selling Price</th>
+					</tr>
+					<tr>
+						<th id="quebec" class="sub-header">Quebec</th>
+						<th id="ontario" class="sub-header">Ontario</th>
+						<th id="single-house" class="sub-header">Single House</th>
+						<th id="condo" class="sub-header">Condo</th>
+					</tr>
+					</thead>
+					<tbody>
+					<tr>
+						<td headers="year" class="sub-header">2021</td>
+						<td headers="sold-properties quebec">50</td>
+						<td headers="sold-properties ontario">100</td>
+						<td headers="avg-selling-price single-house">$500,000</td>
+						<td headers="avg-selling-price condo">189,000</td>
+					</tr>
+					<tr>
+						<td headers="year" class="sub-header">2022</td>
+						<td headers="sold-properties quebec">100</td>
+						<td headers="sold-properties ontario">200</td>
+						<td headers="avg-selling-price single-house">$780,000</td>
+						<td headers="avg-selling-price condo">240,000</td>
+					</tr>
+					</tbody>
+				</table>
+				</section>
 
+				<style>
+				#content-c h2 {
+					color:#333333;
+					margin-top: 1.5rem;
+				}
+
+				#himax-stats {
+					border-collapse: collapse;
+					width: 80%;
+					margin-top: 10px;
+				}
+
+				#himax-stats th,
+				#himax-stats td {
+					border: 1px solid #999;
+					padding: 8px 12px;
+					text-align: center;
+				}
+
+				/* Main header row: Year, Sold Properties, Average Selling Price */
+				.main-header {
+					background-color: #000;
+					color: #fff;
+				}
+
+				/* Sub headers and year rows */
+				.sub-header {
+					background-color: #d9d9d9;
+					color: #000;
+					font-weight: bold;
+				}
+
+				#himax-stats caption {
+					font-weight: bold;
+					margin-bottom: 8px;
+				}
+				</style>
 			</div>
 		</div>
+
 		<div class="clear"></div>
-		<div>Content D here</div>
+		<div>
+			<section aria-labelledby="more-resources">
+				<h2 id="more-resources"><strong>More Resources on How to Choose the Right Agent</strong></h2>
+			</section>
+		</div>
 		<div class="row">
 			<div class="col-md-4 ">
-				<p>Content F here</p>
-			</div>
-			<div class="col-md-4">
-				<p>Content G here</p>
+				<!-- <p>Content F here</p> -->
+				<section aria-labelledby="selling-risks">
+					<article>
+						<figure>
+						<img src="1.png" alt="Home for sale sign in front of a house">
+						</figure>
 
+						<h3 id="selling-risks">
+						<a href="#" title="Read about the risks of selling your home yourself">
+							What Are The Risks of Selling a Home Yourself?
+						</a>
+						</h3>
+
+						<p>
+						We’ve all seen the videos, read the stories, and gasped at the images of people who thought 
+						they could conquer a project that would have been better left to the professionals.
+						Read more						
+						</p>
+					</article>
+				</section>
 			</div>
 			<div class="col-md-4">
-				<p>Content H here</p>
+				<!-- <p>Content G here</p> -->
+				<section aria-labelledby="questions-agent">
+					<article>
+						<figure>
+						<img src="2.png" alt="Real estate agent discussing options with clients">
+						</figure>
+
+						<h3 id="questions-agent">
+						<a href="#" title="Questions to Ask a Real Estate Agent">
+							7 Questions to Ask a Real Estate Agent Before You Commit
+						</a>
+						</h3>
+
+						<p>
+						According to research by the National Association of Realtors, there are considerable benefits 
+						to working with a real estate agent, including higher sale prices.
+						</p>
+					</article>
+				</section>
+			</div>
+			<div class="col-md-4">
+				<!-- <p>Content H here</p> -->
+				<section aria-labelledby="reasons-hire-agent">
+					<article>
+						<figure>
+						<img src="3.png" alt="Real estate agent handing house keys to a new homeowner">
+						</figure>
+
+						<h3 id="reasons-hire-agent">
+							<a href="#" title="Reasons to Hire an Agent">
+								8 Reasons to Hire an Agent When Selling Your Home
+							</a>
+						</h3>
+
+						<p>
+						With all the many different moving parts involved in selling your home, here are eight very valid 
+						reasons to have a real estate agent on speed dial.
+						</p>
+					</article>
+				</section>
 
 			</div>
 		</div>
@@ -115,10 +274,9 @@
 						<li><a href="#">Privacy policy</a></li>
 						<li><a href="#">Accessibility statement</a></li>
 						<li style="list-style: none;" class="social">
-						<!-- <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"> -->
 						<a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Visit our Twitter page">
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" role="img" aria-labelledby="twitterTitle">
-      						<title id="twitterTitle">Twitter</title>
+      						<title id="twitterTitle">Twitter icon</title>
 						  <path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm-48.9 158.8c.2 2.8.2 5.7.2 8.5 0 86.7-66 186.6-186.6 186.6-37.2 0-71.7-10.8-100.7-29.4 5.3.6 10.4.8 15.8.8 30.7 0 58.9-10.4 81.4-28-28.8-.6-53-19.5-61.3-45.5 10.1 1.5 19.2 1.5 29.6-1.2-30-6.1-52.5-32.5-52.5-64.4v-.8c8.7 4.9 18.9 7.9 29.6 8.3a65.447 65.447 0 0 1-29.2-54.6c0-12.2 3.2-23.4 8.9-33.1 32.3 39.8 80.8 65.8 135.2 68.6-9.3-44.5 24-80.6 64-80.6 18.9 0 35.9 7.9 47.9 20.7 14.8-2.8 29-8.3 41.6-15.8-4.9 15.2-15.2 28-28.8 36.1 13.2-1.4 26-5.1 37.8-10.2-8.9 13.1-20.1 24.7-32.9 34z"></path>
 						</svg></a></li>
 						
